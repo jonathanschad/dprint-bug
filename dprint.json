@@ -1,0 +1,46 @@
+{
+    "$schema": "https://dprint.dev/schemas/v0.json",
+    "lineWidth": 120,
+    "indentWidth": 4,
+    "useTabs": false,
+    "typescript": {
+        "quoteStyle": "preferSingle",
+        "semiColons": "prefer",
+        "importDeclaration.spaceSurroundingNamedImports": "true",
+        "module.sortImportDeclarations": "caseInsensitive",
+        "trailingCommas": "onlyMultiLine",
+        "bracePosition": "sameLine",
+        "functionExpression.spaceBeforeParentheses": true,
+        "operatorPosition": "nextLine"
+    },
+    "json": {
+        "lineWidth": 10000,
+        "commentLine.forceSpaceAfterSlashes": true,
+        "preferSingleLine": false,
+        "trailingCommas": "never"
+    },
+    "markup": {
+        "printWidth": 120,
+        "useTabs": false,
+        "indentWidth": 4,
+        "quotes": "double",
+        "maxAttrsPerLine": 1,
+        "singleAttrSameLine": true,
+        "component.selfClosing": true,
+        "html.normal.selfClosing": true,
+        "html.void.selfClosing": false,
+        "svg.selfClosing": true,
+        "vBindStyle": "short",
+        "vOnStyle": "short",
+        "vSlotStyle": "short",
+        "vBindSameNameShortHand": false,
+        "vueComponentCase": "kebabCase",
+        "scriptFormatter": "dprint"
+    },
+    "excludes": ["**/node_modules", "**/dist", "**/*-lock.json", "**/*.njk"],
+    "plugins": [
+        "https://plugins.dprint.dev/typescript-0.95.11.wasm",
+        "https://plugins.dprint.dev/g-plane/markup_fmt-v0.24.0.wasm",
+        "https://plugins.dprint.dev/json-0.20.0.wasm"
+    ]
+}

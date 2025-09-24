@@ -1,0 +1,14 @@
+{
+    "name": "dprint-bug",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "format": "dprint fmt"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "dprint": "^0.50.2"
+    }
+}
